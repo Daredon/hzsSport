@@ -24,6 +24,7 @@
     <ul>
       <li>
         <a href="#">
+        {{ Session::get('id')}}
           <i class="material-icons">home</i>
           <span>Home</span>
         </a>

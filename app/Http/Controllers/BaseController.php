@@ -15,4 +15,8 @@ class BaseController extends Controller
     public function indexPage() {
         return view('welcome', ['data' => ['fudbal', 'kosarka', 'odbojka', 'tenis', 'trcanje']]);
     }
+
+    public function loginPage() {
+        return view('login');
+    }
 }
