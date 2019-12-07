@@ -17,7 +17,7 @@ class User
     }
 
     public static function getUserPassword($input) {
-        $res = DB::table('users')->select('id', 'password', 'username')->where('username', '=', $input)->orWhere('email', '=', $input)->get();
+        $res = DB::table('users')->select('id', 'password', 'username', 'type')->where('username', '=', $input)->orWhere('email', '=', $input)->get();
         return $res;
     }
 }

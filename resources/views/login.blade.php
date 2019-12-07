@@ -12,7 +12,7 @@
         {{ $error }} <br>
     @endforeach
 @endif
-{!! Form::open(['route' => 'users.loginUser']) !!}
+{!! Form::open(['route' => 'user.loginUser']) !!}
         <input type="text" name="input" placeholder="Username or email">
         <input type="password" name="password" placeholder="Password">
         <input type="submit">
