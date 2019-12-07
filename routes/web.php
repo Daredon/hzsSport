@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'BaseController@indexPage');
+Route::get('/register', 'BaseController@registerPage');
+
+Route::post('/users/addUser', 'UsersController@addUser')->name('users.addUser');
