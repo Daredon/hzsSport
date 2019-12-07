@@ -5,7 +5,7 @@ nav {
   z-index: 100;
   height: calc(100% + 300px);
   padding-bottom: 300px;
-  width: 300px;
+  width: 20rem;
   background-color: #001016;
   color: #fff;
 }
@@ -21,7 +21,7 @@ nav .links {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: calc(100% - 8rem);
+  height: calc(100% - 4rem);
 }
 
 nav > .burger {
@@ -41,6 +41,7 @@ nav ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100%;
 }
 
 nav li {
@@ -60,6 +61,10 @@ nav li {
           align-items: center;
 }
 
+nav li.account {
+  margin-top: auto;
+}
+
 nav li:hover {
   background-color: #031c25;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
@@ -67,7 +72,7 @@ nav li:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   border-radius: 0 0.5rem 1.5rem 0;
-  width: 300px;
+  width: 20rem;
 }
 
 nav li:hover span {

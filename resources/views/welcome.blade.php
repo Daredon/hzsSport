@@ -41,31 +41,36 @@
             <span>Liked</span>
           </a>
         </li>
-      </ul>
-
-      <ul class="sports">
-        @foreach($data as $sport)
-        <li onclick="scrollToSport('{{$sport}}')">
-          <img src="{{ asset('assets/rekviziti/' . $sport . '.png') }}" alt="" />
-          <span>{{ ucfirst($sport) }}</span>
+        <li class="account">
+          <a href="#">
+            <i class="material-icons">person</i>
+            <span>Account</span>
+          </a>
         </li>
-        @endforeach
       </ul>
     </div>
   </nav>
   <div id="scroller">
-    <div class="content"></div>
     <div id="sports">
-      @foreach($data as $sport)
-      <div id="{{$sport}}">
-        <img src="{{ asset('assets/rekviziti/' . $sport . '.png') }}" alt="{{$sport}}" />
+      <div>
+        <video width="320" height="240" autoplay>
+          <source src=" {{asset('assets/videos/background1.mp4')}}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h1>Lol</h1>
       </div>
-      @endforeach
     </div>
   </div>
-  <div id="top" onclick="scrollToTop()">
-    <i class="material-icons">keyboard_arrow_left</i>
+
+  <div id="controlls">
+    <div id="left" onclick="scrollBack()">
+      <i class="material-icons">keyboard_arrow_left</i>
+    </div>
+    <div id="right" onclick="scrollFront()">
+      <i class="material-icons">keyboard_arrow_right</i>
+    </div>
   </div>
+  <script src="scripts/inView.js"></script>
   <script src="scripts/scroll.js"></script>
 </body>
 

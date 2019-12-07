@@ -35,11 +35,20 @@
   background: repeating-linear-gradient(45deg, #606dbc, #606dbc 200px, #465298 200px, #465298 400px);
 }
 
-#top {
+#controlls {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+}
+
+#controlls div {
   -webkit-animation: top 2s alternate infinite ease-in-out;
           animation: top 2s alternate infinite ease-in-out;
-  opacity: 0;
-  pointer-events: none;
+  margin-left: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,27 +62,24 @@
   border-radius: 5000px;
   background-color: #001016;
   cursor: pointer;
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
 }
 
-#top.active {
+#controlls div.active {
   opacity: 1;
   pointer-events: auto;
 }
 
-#top:hover {
+#controlls div:hover {
   -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
           box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
   background-color: #031c25;
 }
 
-#top .material-icons {
+#controlls div .material-icons {
   color: #fff;
   font-size: 2rem;
 }
@@ -82,12 +88,23 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 #sports div {
-  min-width: 100vw;
+  min-width: calc(100vw - 4rem);
   padding: 2rem;
-  background-color: #6455a5;
-  border: white solid 1px;
+}
+
+#sports div:nth-child(1) {
+  min-width: 100vw;
+}
+
+#sports div video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 /*# sourceMappingURL=scroll.css.map */

@@ -26,6 +26,8 @@ let scroll;
 let nav;
 let burger;
 let topButton;
+const sportovi = ["fudbal", "košarka", "odbojka", "tenis", "trčanje"];
+let active = 0;
 
 function load() {
     topButton = document.getElementById("top");
@@ -40,20 +42,30 @@ function load() {
 }
 
 function scrolled() {
-    if (burger.classList.contains("active")) {
-        burger.classList.remove("active");
-    }
+    // if (burger.classList.contains("active")) {
+    //     burger.classList.remove("active");
+    // }
 
-    if (window.scrollY > vw(50)) {
-        if (!topButton.classList.contains("active"))
-            topButton.classList.add("active");
-    } else {
-        if (topButton.classList.contains("active"))
-            topButton.classList.remove("active");
-    }
+    // if (window.scrollY > vw(50)) {
+    //     if (!topButton.classList.contains("active"))
+    //         topButton.classList.add("active");
+    // } else {
+    //     if (topButton.classList.contains("active"))
+    //         topButton.classList.remove("active");
+    // }
 
     nav.style.transition = "none";
     animate();
+    inView.offset({
+        left: 500,
+        right: 500
+    });
+    sportovi.forEach((sport, i) => {
+        inView("#" + sport).on("enter", () => {
+            active = i;
+            console.log(i);
+        });
+    });
 }
 
 function resized() {
@@ -92,3 +104,33 @@ function scrollToSport(sport) {
         behavior: "smooth"
     });
 }
+
+function scrollBack() {
+    console.log(active);
+    scrollToSport(sportovi[active - 1]);
+}
+function scrollFront() {
+    console.log(active);
+    scrollToSport(sportovi[active + 1]);
+}
+
+document.addEventListener(
+    "keyup",
+    event => {
+        if (event.key !== undefined) {
+            if (event.key === "ArrowLeft") scrollBack();
+
+            if (event.key === "ArrowRight") scrollFront();
+            return;
+        }
+        // noinspection JSDeprecatedSymbols
+        if (event.keyCode !== undefined) {
+            // noinspection JSDeprecatedSymbols
+            if (event.keyCode === 37) scrollBack();
+            // noinspection JSDeprecatedSymbols
+            if (event.keyCode === 39) scrollFront();
+            return;
+        }
+    },
+    true
+);
