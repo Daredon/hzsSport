@@ -104,7 +104,7 @@ function imageLoad() {
     plaveSmrtovnice.push(smrtovnica);
     plavaSmrtovnica.appendChild(smrtovnica);
   }
-  
+
   imagesDiv.removeChild(loading);
   reset();
   index = images.length - 1;

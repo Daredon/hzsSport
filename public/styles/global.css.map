@@ -1,1 +1,12 @@
-{"version":3,"sourceRoot":"","sources":["global.scss","imports/_mixins.scss"],"names":[],"mappings":"AAIA;EACE;EACA;EACA;EACA;;;AAGF;ECVE;EACA;EACA;EACA;EACA","file":"global.css"}
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;EACtB,WAAW,EAAE,kBAAkB;CAChC;;AAED,AAAA,eAAe,EAAE,GAAG,CAAC;EGVnB,WAAW,EAAE,IAAI;EACjB,gBAAgB,EAAE,IAAI;EACtB,kBAAkB,EAAE,IAAI;EACxB,mBAAmB,EAAE,IAAI;EACzB,cAAc,EAAE,IAAI;CHQrB",
+    "sources": [
+        "global.scss",
+        "imports/_colors.scss",
+        "imports/_sizes.scss",
+        "imports/_mixins.scss"
+    ],
+    "names": [],
+    "file": "global.css"
+}
