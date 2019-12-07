@@ -29,29 +29,7 @@
 }
 
 #scroller .content {
-  padding-left: 300px;
-  position: relative;
-  width: 350vw;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(red), to(purple));
-  background: linear-gradient(90deg, red, purple);
-}
-
-#scroller .content .test {
-  position: absolute;
-  right: 17px;
-  top: 0;
-  width: 200px;
-  height: 50px;
-  background-color: #fff;
-}
-
-#scroller .content::after {
   z-index: 10;
-  content: "lol";
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 100vw;
   height: 100vh;
   background: repeating-linear-gradient(45deg, #606dbc, #606dbc 200px, #465298 200px, #465298 400px);
@@ -98,5 +76,17 @@
 #top .material-icons {
   color: #fff;
   font-size: 2rem;
+}
+
+#sports {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#sports div {
+  min-width: 100vw;
+  padding: 2rem;
+  background-color: red;
 }
 /*# sourceMappingURL=scroll.css.map */

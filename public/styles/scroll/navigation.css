@@ -10,6 +10,20 @@ nav {
   color: #fff;
 }
 
+nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: calc(100% - 8rem);
+}
+
 nav > .burger {
   margin: 1rem;
   --height: 1.666rem;
@@ -17,7 +31,6 @@ nav > .burger {
 }
 
 nav ul {
-  height: calc(100% - 8rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,6 +44,7 @@ nav ul {
 }
 
 nav li {
+  cursor: pointer;
   font-size: 2rem;
   list-style: none;
   padding: 1rem;
@@ -38,6 +52,12 @@ nav li {
           transform-origin: left center;
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav li:hover {
@@ -54,6 +74,15 @@ nav li:hover span {
   opacity: 1;
 }
 
+nav li span {
+  opacity: var(--nav-opacity);
+}
+
+nav .sports img {
+  margin-right: 1rem;
+  width: 2rem;
+}
+
 nav a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,9 +97,5 @@ nav a {
 nav a .material-icons {
   font-size: 2rem;
   margin-right: 1rem;
-}
-
-nav a span {
-  opacity: var(--nav-opacity);
 }
 /*# sourceMappingURL=navigation.css.map */

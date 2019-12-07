@@ -21,35 +21,46 @@
       <div></div>
       <div></div>
     </div>
-    <ul>
-      <li>
-        <a href="#">
-          <i class="material-icons">home</i>
-          <span>Home</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="material-icons">camera_enhance</i>
-          <span>Images</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <i class="material-icons">favorite</i>
-          <span>Liked</span>
-        </a>
-      </li>
-    </ul>
+    <div class="links">
+      <ul>
+        <li>
+          <a onclick="scrollToTop()">
+            <i class="material-icons">home</i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="material-icons">camera_enhance</i>
+            <span>Images</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="material-icons">favorite</i>
+            <span>Liked</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="sports">
+        @foreach($data as $sport)
+        <li onclick="scrollToSport('{{$sport}}')">
+          <img src="{{ asset('assets/rekviziti/' . $sport . '.png') }}" alt="" />
+          <span>{{ ucfirst($sport) }}</span>
+        </li>
+        @endforeach
+      </ul>
+    </div>
   </nav>
   <div id="scroller">
-    <div class="landing"></div>
-    <div class="sports">
-      <div class="fudbal"></div>
-      <div class="kosarka"></div>
-      <div class="odbojka"></div>
-      <div class="tenis"></div>
-      <div class="trcanje"></div>
+    <div class="content"></div>
+    <div id="sports">
+      @foreach($data as $sport)
+      <div id="{{$sport}}">
+        <img src="{{ asset('assets/rekviziti/' . $sport . '.png') }}" alt="{{$sport}}" />
+      </div>
+      @endforeach
     </div>
   </div>
   <div id="top" onclick="scrollToTop()">

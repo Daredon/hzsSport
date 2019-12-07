@@ -1,13 +1,23 @@
-const vh = v => (v / 100) * Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-const vw = v => (v / 100) * Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-const rem = num => num * parseFloat(getComputedStyle(document.documentElement).fontSize);
-const map = (num, in_min, in_max, out_min, out_max) => (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-const anim = (val, min, max, minR, maxR) => map((val < max) ? val : max, min, max, minR, maxR);
+const vh = v =>
+    (v / 100) *
+    Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+const vw = v =>
+    (v / 100) *
+    Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+const rem = num =>
+    num * parseFloat(getComputedStyle(document.documentElement).fontSize);
+const map = (num, in_min, in_max, out_min, out_max) =>
+    ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
+const anim = (val, min, max, minR, maxR) =>
+    map(val < max ? val : max, min, max, minR, maxR);
 const animate = () => {
     nav.style.width = anim(window.scrollY, 0, vw(25), 300, rem(4)) + "px";
-    nav.style.setProperty("--nav-opacity", anim(window.scrollY, 0, vw(12.5), 1, 0));
+    nav.style.setProperty(
+        "--nav-opacity",
+        anim(window.scrollY, 0, vw(12.5), 1, 0)
+    );
     burger.style.opacity = 1 - anim(window.scrollY, 0, vw(12.5), 1, 0) + "";
-    burger.style.pointerEvents = (burger.style.opacity < 1) ? "none" : "auto";
+    burger.style.pointerEvents = burger.style.opacity < 1 ? "none" : "auto";
     scroller.style.transform = "translate( -" + window.scrollY + "px ,0)";
 };
 
@@ -63,13 +73,22 @@ function burgerToggle() {
         nav.style.transition = "all .2s ease-in";
         animate();
     }
-
 }
 
 function scrollToTop() {
     window.scroll({
         top: 0,
         left: 0,
-        behavior: 'smooth'
+        behavior: "smooth"
+    });
+}
+
+function scrollToSport(sport) {
+    sports = document.getElementById("sports");
+    sportElement = document.getElementById(sport);
+    window.scroll({
+        top: sportElement.offsetLeft - rem(4),
+        left: 0,
+        behavior: "smooth"
     });
 }
