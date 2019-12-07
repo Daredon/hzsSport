@@ -10,7 +10,12 @@ class User
         DB::table('users')->insert([
             'username' => $data->username,
             'password' => hash('sha256', hash('sha256', $data->password)),
-            'email' => $data->email
+            'email' => $data->email,
+            'firstname' => $data->fname,
+            'lastname' => $data->lname,
+            'company' => $data->company,
+            'ingroup' => 0,
+            'group_id' => null
         ]);
 
         return DB::table('users')->select('id')->where('email', '=', $data->email)->get()[0]->id;
