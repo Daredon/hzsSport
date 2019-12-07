@@ -21,6 +21,29 @@
       <div></div>
       <div></div>
     </div>
+<<<<<<< HEAD
+    <ul>
+      <li>
+        <a href="#">
+        {{ Session::get('id')}}
+          <i class="material-icons">home</i>
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="material-icons">camera_enhance</i>
+          <span>Images</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="material-icons">favorite</i>
+          <span>Liked</span>
+        </a>
+      </li>
+    </ul>
+=======
     <div class="links">
       <ul>
         <li>
@@ -52,6 +75,7 @@
         @endforeach
       </ul>
     </div>
+>>>>>>> 753db741a097fbaab16dff259335700f281fe88f
   </nav>
   <div id="scroller">
     <div class="content"></div>

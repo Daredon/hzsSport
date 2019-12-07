@@ -17,4 +17,12 @@ class BaseController extends Controller
     {
         return view('welcome', ['data' => ['fudbal', 'košarka', 'odbojka', 'tenis', 'trčanje']]);
     }
+<<<<<<< HEAD
+
+    public function loginPage() {
+        return view('login');
+    }
 }
+=======
+}
+>>>>>>> 753db741a097fbaab16dff259335700f281fe88f
