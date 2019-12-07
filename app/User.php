@@ -16,6 +16,19 @@ class User
         return DB::table('users')->select('id')->where('email', '=', $data->email)->get()[0]->id;
     }
 
+    public static function getUser($name) {
+        return DB::table('users')->select(
+            'id',
+            'username',
+            'firstname',
+            'lastname',
+            'email',
+            'company',
+            'ingroup',
+            'group_id'
+        )->where('username', '=', $name)->get()[0];
+    } 
+
     public static function getUserPassword($input) {
         $res = DB::table('users')->select('id', 'password', 'username', 'type')->where('username', '=', $input)->orWhere('email', '=', $input)->get();
         return $res;

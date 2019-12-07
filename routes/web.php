@@ -18,7 +18,7 @@ Route::get('/logout', 'UsersController@logout')->name('page.logout');
 
 Route::post('/users/loginUser', 'UsersController@loginUser')->name('user.loginUser');
 Route::post('/users/addUser', 'UsersController@addUser')->name('user.addUser');
-Route::get('/user/{username}', 'UserController@showUser')->name('user.showcase');
+Route::get('/user/{username}', 'UsersController@showUser')->name('user.showcase');
 
 
 Route::get('/addEvent', 'BaseController@addEventPage')->name('page.addEvent');

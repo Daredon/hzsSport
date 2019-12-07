@@ -53,7 +53,10 @@
   <div id="scroller">
     <div id="sports">
       <div>
-        <video src="{{asset('assets/videos/background1.mp4')}}"></video>
+        <video width="320" height="240" autoplay>
+          <source src=" {{asset('assets/videos/background1.mp4')}}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
         <h1>Lol</h1>
       </div>
     </div>
