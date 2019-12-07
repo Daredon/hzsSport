@@ -16,7 +16,7 @@ nav {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height: calc(100% - 8rem);
+        height: calc(100% - 4rem);
     }
 
     & > .burger {
@@ -29,6 +29,7 @@ nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        height: 100%;
     }
 
     li {
@@ -40,6 +41,10 @@ nav {
         transition: all 0.1s ease-in;
         display: flex;
         align-items: center;
+
+        &.account {
+            margin-top: auto;
+        }
 
         &:hover {
             background-color: $color-bg-focus;

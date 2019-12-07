@@ -8,8 +8,8 @@
   <title>scroll.</title>
   <link rel="stylesheet" href="{{ asset('styles/global.css') }}" />
   <link rel="stylesheet" href="{{ asset('styles/scroll/navigation.css')}}" />
-  <link rel="stylesheet" href="{{ asset('styles/scroll/scroll.css')}}" />
   <link rel="stylesheet" href="{{ asset('styles/burger.css')}}" />
+  <link rel="stylesheet" href="{{ asset('styles/profile.css')}}" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
 </head>
@@ -42,7 +42,7 @@
           </a>
         </li>
         <li class="account">
-          <a href="#">
+          <a href="{{route('profile')}}">
             <i class="material-icons">person</i>
             <span>Account</span>
           </a>
@@ -50,26 +50,8 @@
       </ul>
     </div>
   </nav>
-  <div id="scroller">
-    <div id="sports">
-      @foreach($data as $sport)
-      <div id="{{$sport}}">
-        <img src="{{ asset('assets/rekviziti/' . $sport . '.png') }}" alt="{{$sport}}" />
-      </div>
-      @endforeach
-    </div>
-  </div>
 
-  <div id="controlls">
-    <div id="left" onclick="scrollBack()">
-      <i class="material-icons">keyboard_arrow_left</i>
-    </div>
-    <div id="right" onclick="scrollFront()">
-      <i class="material-icons">keyboard_arrow_right</i>
-    </div>
-  </div>
-  <script src="scripts/inView.js"></script>
-  <script src="scripts/scroll.js"></script>
+
 </body>
 
 </html>
