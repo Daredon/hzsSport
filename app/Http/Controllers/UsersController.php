@@ -24,6 +24,7 @@ class UsersController extends Controller
             if ($pwd[0]->password === hash('sha256', hash('sha256', $req->get('password')))) {
                 session(['id' => $pwd[0]->id]);
                 session(['username' => $pwd[0]->username]);
+                session(['type' => $pwd[0]->type]);
             } else {
                 array_push($errors, 'Pogresna lozinka.');
             }
@@ -56,6 +57,7 @@ class UsersController extends Controller
             $id = User::addUser($req);
             session(['id' => $id]);
             session(['username' => $req->get('username')]);
+            session(['type' => 0]);
             return redirect()->route('index');
         }
     }
