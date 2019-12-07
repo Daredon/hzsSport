@@ -9,7 +9,7 @@
     font-family: "Lato", sans-serif;
 }
 
-body {
+html {
     font-size: 16px;
 }
 
@@ -19,7 +19,7 @@ img {
 }
 
 @media (max-height: 800px) {
-    body {
+    html {
         font-size: 12px;
     }
 }
