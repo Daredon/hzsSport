@@ -88,15 +88,23 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 #sports div {
   min-width: calc(100vw - 4rem);
   padding: 2rem;
-  background-color: #6455a5;
 }
 
 #sports div:nth-child(1) {
   min-width: 100vw;
+}
+
+#sports div video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 /*# sourceMappingURL=scroll.css.map */

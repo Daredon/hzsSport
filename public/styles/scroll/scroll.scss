@@ -69,13 +69,21 @@
 
 #sports {
     display: flex;
+    position: relative;
 
     div {
         min-width: calc(100vw - 4rem);
         padding: 2rem;
-        background-color: rgb(100, 85, 165);
         &:nth-child(1) {
             min-width: 100vw;
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
         }
     }
 }

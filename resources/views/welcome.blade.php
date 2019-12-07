@@ -52,11 +52,10 @@
   </nav>
   <div id="scroller">
     <div id="sports">
-      @foreach($data as $sport)
-      <div id="{{$sport}}">
-        <img src="{{ asset('assets/rekviziti/' . $sport . '.png') }}" alt="{{$sport}}" />
+      <div>
+        <video src="{{asset('assets/videos/background1.mp4')}}"></video>
+        <h1>Lol</h1>
       </div>
-      @endforeach
     </div>
   </div>
 
