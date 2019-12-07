@@ -15,7 +15,6 @@
 </head>
 
 <body onload="load()" onscroll="scrolled()" onresize="resized()">
-  <?php phpinfo() ?>
   <nav id="nav">
     <div onclick="burgerToggle()" class="burger" id="burger">
       <div></div>
