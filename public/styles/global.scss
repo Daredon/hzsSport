@@ -3,12 +3,23 @@
 @import "imports/mixins";
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
 }
 
-.material-icons, img {
-  @include unselectable;
+body {
+    font-size: 16px;
+}
+
+.material-icons,
+img {
+    @include unselectable;
+}
+
+@media (max-height: 800px) {
+    body {
+        font-size: 12px;
+    }
 }
