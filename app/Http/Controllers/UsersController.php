@@ -10,8 +10,8 @@ use Illuminate\Http\Request;
 class UsersController extends Controller
 {
 
-    public function showUser() {
-        return view('profile_showcase');
+    public function showUser($name) {
+        return view('profile_showcase', ['user' => User::getUser($name)]);
     }
 
     public function logout() {
