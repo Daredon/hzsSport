@@ -52,12 +52,15 @@
   </nav>
   <div id="scroller">
     <div id="sports">
-      <div>
-        <video width="320" height="240" autoplay>
+      <div id="slide1">
+        <video autoplay loop muted>
           <source src=" {{asset('assets/videos/background1.mp4')}}" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         <h1>Lol</h1>
+      </div>
+      <div id="slide2">
+
       </div>
     </div>
   </div>

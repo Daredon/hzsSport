@@ -26,7 +26,7 @@ let scroll;
 let nav;
 let burger;
 let topButton;
-const sportovi = ["fudbal", "košarka", "odbojka", "tenis", "trčanje"];
+const sportovi = ["slide1", "slide2"];
 let active = 0;
 
 function load() {

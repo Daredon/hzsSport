@@ -74,16 +74,32 @@
     div {
         min-width: calc(100vw - 4rem);
         padding: 2rem;
+
+        overflow: hidden;
+        position: relative;
         &:nth-child(1) {
             min-width: 100vw;
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: $color-bg;
+                opacity: 0.5;
+            }
         }
 
-        video {
+        video,
+        img {
             position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
+            top: -10px;
+            left: -10px;
+            bottom: -10px;
+            right: -10px;
+
+            filter: blur(10px);
         }
     }
 }
