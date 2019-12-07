@@ -92,3 +92,5 @@ function scrollToSport(sport) {
         behavior: "smooth"
     });
 }
+
+

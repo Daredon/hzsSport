@@ -87,6 +87,7 @@
 #sports div {
   min-width: 100vw;
   padding: 2rem;
-  background-color: red;
+  background-color: #6455a5;
+  border: white solid 1px;
 }
 /*# sourceMappingURL=scroll.css.map */
