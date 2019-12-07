@@ -15,6 +15,9 @@
 {!! Form::open(['route' => 'user.addUser']) !!}
         <input type="text" name="username" placeholder="Username">
         <input type="email" name="email" placeholder="email">
+        <input type="text" name="fname" placeholder="Ime">
+        <input type="text" name="lname" placeholder="Prezime">
+        {!! Form::select('company', $companies) !!}
         <input type="password" name="password" placeholder="Password">
         <input type="password" name="password_conf" placeholder="Confirm Password">
         <input type="submit">
