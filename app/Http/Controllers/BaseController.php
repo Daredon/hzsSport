@@ -9,16 +9,16 @@ use Illuminate\Support\Facades\DB;
 class BaseController extends Controller
 {
 
-    public function registerPage()
-    {
+    public function registerPage() {
         return view('register');
     }
-    public function indexPage()
-    {
+    public function indexPage() {
         return view('welcome', ['data' => ['fudbal', 'košarka', 'odbojka', 'tenis', 'trčanje']]);
     }
-
     public function loginPage() {
         return view('login');
+    }
+    public function addEventPage() {
+        return view('addEvent');
     }
 }

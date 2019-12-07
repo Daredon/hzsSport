@@ -10,9 +10,13 @@ use Illuminate\Http\Request;
 class UsersController extends Controller
 {
 
+    public function showUser() {
+        return view('profile_showcase');
+    }
+
     public function logout() {
         session()->flush();
-        return redirect()->route('index');
+        return redirect()->route('page.index');
     }
 
     public function loginUser(Request $req) {
@@ -24,14 +28,15 @@ class UsersController extends Controller
             if ($pwd[0]->password === hash('sha256', hash('sha256', $req->get('password')))) {
                 session(['id' => $pwd[0]->id]);
                 session(['username' => $pwd[0]->username]);
+                session(['type' => $pwd[0]->type]);
             } else {
                 array_push($errors, 'Pogresna lozinka.');
             }
         }
         if (empty($errors)) {
-            return redirect()->route('index');
+            return redirect()->route('page.index');
         } else {
-            return redirect()->route('login')->with('errors', $errors);
+            return redirect()->route('page.login')->with('errors', $errors);
         }
     }
 
@@ -51,12 +56,13 @@ class UsersController extends Controller
             array_push($errors, 'Sifra mora imati 8 ili vise karaktera.');
         }
         if (!empty($errors)) {
-            return redirect()->route('register')->with('errors', $errors);
+            return redirect()->route('page.register')->with('errors', $errors);
         } else {
             $id = User::addUser($req);
             session(['id' => $id]);
             session(['username' => $req->get('username')]);
-            return redirect()->route('index');
+            session(['type' => 0]);
+            return redirect()->route('page.index');
         }
     }
 }

@@ -11,10 +11,15 @@
 |
 */
 
-Route::get('/', 'BaseController@indexPage')->name('index');
-Route::get('/register', 'BaseController@registerPage')->name('register');
-Route::get('/login', 'BaseController@loginPage')->name('login');
+Route::get('/', 'BaseController@indexPage')->name('page.index');
+Route::get('/register', 'BaseController@registerPage')->name('page.register');
+Route::get('/login', 'BaseController@loginPage')->name('page.login');
+Route::get('/logout', 'UsersController@logout')->name('page.logout');
 
-Route::post('/users/loginUser', 'UsersController@loginUser')->name('users.loginUser');
-Route::post('/users/addUser', 'UsersController@addUser')->name('users.addUser');
-Route::get('/logout', 'UsersController@logout')->name('logout');
+Route::post('/users/loginUser', 'UsersController@loginUser')->name('user.loginUser');
+Route::post('/users/addUser', 'UsersController@addUser')->name('user.addUser');
+Route::get('/user/{username}', 'UserController@showUser')->name('user.showcase');
+
+
+Route::get('/addEvent', 'BaseController@addEventPage')->name('page.addEvent');
+Route::post('/events/create', 'EventsController@createEvent')->name('event.create');
