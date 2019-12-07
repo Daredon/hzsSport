@@ -11,7 +11,13 @@ nav {
     width: $sidebar-width;
     background-color: $color-bg;
     color: $color-fg;
-    // transition: all .1s ease-in;
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: calc(100% - 8rem);
+    }
 
     & > .burger {
         margin: 1rem;
@@ -20,18 +26,20 @@ nav {
     }
 
     ul {
-        height: calc(100% - 8rem);
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
     li {
+        cursor: pointer;
         font-size: 2rem;
         list-style: none;
         padding: 1rem;
         transform-origin: left center;
         transition: all 0.1s ease-in;
+        display: flex;
+        align-items: center;
 
         &:hover {
             background-color: $color-bg-focus;
@@ -44,8 +52,17 @@ nav {
                 opacity: 1;
             }
         }
-    }
 
+        span {
+            opacity: var(--nav-opacity);
+        }
+    }
+    .sports {
+        img {
+            margin-right: 1rem;
+            width: 2rem;
+        }
+    }
     a {
         display: flex;
         align-items: center;
@@ -55,10 +72,6 @@ nav {
         .material-icons {
             font-size: 2rem;
             margin-right: 1rem;
-        }
-
-        span {
-            opacity: var(--nav-opacity);
         }
     }
 }
