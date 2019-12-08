@@ -1,11 +1,15 @@
 @import "../imports/colors";
 
+
 body {
+   height: 100vh;
    background: $color-bg;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .form {
-   padding-top: 6rem;
    width: 100%;
    display: flex;
    flex-direction: column;
