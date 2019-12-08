@@ -9,13 +9,14 @@
     display: inline-grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
-    padding: 2rem;
+    grid-gap: 1rem;
+    padding: 1rem;
     margin-left: 4rem;
 
     & > div {
         border-radius: 0.5rem;
         background: $color-bg-focus;
+        padding: 1rem;
     }
 }
 
@@ -23,7 +24,6 @@
     color: $color-fg;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     & > div {
         display: flex;
         flex-direction: row;

@@ -8,14 +8,15 @@
       grid-template-rows: 1fr 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
-  padding: 2rem;
+  grid-gap: 1rem;
+  padding: 1rem;
   margin-left: 4rem;
 }
 
 #showcase > div {
   border-radius: 0.5rem;
   background: #031c25;
+  padding: 1rem;
 }
 
 .profile {
@@ -27,7 +28,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1rem;
 }
 
 .profile > div {
