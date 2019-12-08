@@ -27,28 +27,27 @@
       <ul>
         <li>
           <a href="{{route('page.index')}}">
-
             <i class="material-icons">home</i>
             <span>Početak</span>
           </a>
         </li>
         <li>
           @if(Session::get('type') == 1)
-          <a onclick="scrollToTop()">
+          <a href="{{route('page.groups')}}">
             <i class="material-icons">people</i>
             <span>Grupe</span>
           </a>
           @else
-          <a onclick="scrollToTop()">
+          <a href="{{route('page.groups')}}" z>
             <i class="material-icons">people</i>
             <span>Grupa</span>
           </a>
           @endif
         </li>
         <li>
-          <a href="#">
-            <i class="material-icons">favorite</i>
-            <span>Liked</span>
+          <a href="{{route('events.show')}}">
+            <i class="material-icons">event</i>
+            <span>Događaji</span>
           </a>
         </li>
       </ul>
