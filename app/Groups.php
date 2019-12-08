@@ -23,8 +23,9 @@ class Groups
         foreach($group_ids as $id) {
             array_push($ids, $id->id);
         }
+        
         foreach ($ids as $id) {
-            $result = DB::table('users')->select('id', 'username', 'group_id')->where('group_id', '=', $id)->get();
+            $result = DB::table('users')->select('id', 'username', 'group_id', 'goal', 'proggress', 'firstname', 'lastname')->where('group_id', '=', $id)->get();
             array_push($groups, $result);
         }
         return $groups[0];
