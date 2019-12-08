@@ -134,7 +134,7 @@
           data: {
             labels: ['jul', 'avgust', 'septembar', 'oktobar', 'novembar', 'decembar'],
             datasets: [{
-              label: 'Srednja vrednost poena srca',
+              label: 'Srednja vrednost kardio poena',
               data: [18, 21, 20, 24, 22, 21],
               backgroundColor: [
                 'rgba(255, 99, 132, 0.2)'
@@ -149,7 +149,7 @@
               ],
               borderWidth: 1
             }, {
-              label: 'Vaša vrednost poena srca',
+              label: 'Vaša vrednost kardio poena',
               data: [17, 22, 18, 22, 24, 25],
               backgroundColor: [
                 'rgba(55, 99, 132, 0.2)'
