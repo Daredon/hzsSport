@@ -3,6 +3,7 @@ body {
 }
 
 .oh {
+  padding-top: 3rem;
   color: #fff;
   margin-left: 4rem;
   display: -webkit-box;
@@ -14,6 +15,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.oh > h1 {
+  font-size: 4rem;
 }
 
 .oh .cards {
@@ -46,6 +55,11 @@ body {
   position: relative;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+}
+
+.oh .cards .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .oh .cards .card h1 {

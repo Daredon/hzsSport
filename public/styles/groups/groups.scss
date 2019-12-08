@@ -1,0 +1,12 @@
+@import "../imports/colors";
+@import "../imports/sizes";
+@import "../imports/mixins";
+
+.users {
+    padding-left: 4rem;
+    width: 100vw;
+    height: 100vh;
+    background: $color-bg;
+    .user {
+    }
+}

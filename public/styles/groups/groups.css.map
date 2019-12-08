@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,MAAM,CAAC;EACH,YAAY,EAAE,IAAI;EAClB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,UAAU,ECRH,OAAO;CDWjB",
+    "sources": [
+        "groups.scss",
+        "../imports/_colors.scss",
+        "../imports/_sizes.scss",
+        "../imports/_mixins.scss"
+    ],
+    "names": [],
+    "file": "groups.css"
+}
