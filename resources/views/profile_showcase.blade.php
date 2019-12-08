@@ -187,8 +187,8 @@
           data: {
             labels: ['ponedeljak', 'utorak', 'sreda', 'četvrtak', 'petak', 'subota', 'nedelja'],
             datasets: [{
-              label: '# aktivnih poena',
-              data: [50, 53, 47, 60, 58, 68, 72],
+              label: '# kilometara',
+              data: [3, 6, 2, 8, 5, 10, 15],
               backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
