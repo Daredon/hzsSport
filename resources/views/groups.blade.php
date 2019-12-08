@@ -77,7 +77,7 @@
     <div class="users">
         @foreach ($groups as $group)
         <div class="user">
-            <span>{{}}</span>
+            <span>{{$group->fistname}}</span>
             <span></span>
             <span></span>
             <span></span>
