@@ -30,18 +30,6 @@
             <span>Početak</span>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <i class="material-icons">camera_enhance</i>
-            <span>Images</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="material-icons">favorite</i>
-            <span>Liked</span>
-          </a>
-        </li>
       </ul>
     </div>
   </nav>

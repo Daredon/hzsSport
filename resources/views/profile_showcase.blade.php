@@ -91,25 +91,17 @@
         var myChart = new Chart(ctx, {
           type: 'pie',
           data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            labels: ['% osoba nije uspešno odradilo zadatak', '% osoba uspešno odradilo zadatak'],
             datasets: [{
               label: '# of Votes',
-              data: [12, 19, 3, 5, 2, 3],
+              data: [15, 85],
               backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgba(54, 162, 235, 0.2)'
               ],
               borderColor: [
                 'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(54, 162, 235, 1)'
               ],
               borderWidth: 1
             }]
@@ -133,10 +125,10 @@
         var myChart = new Chart(ctx, {
           type: 'line',
           data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            labels: ['jul', 'avgust', 'septembar', 'oktobar', 'novembar', 'decembar'],
             datasets: [{
-              label: '# of Votes',
-              data: [12, 19, 3, 5, 2, 3],
+              label: 'Srednja vrednost poena srca',
+              data: [18, 21, 20, 24, 22, 21],
               backgroundColor: [
                 'rgba(255, 99, 132, 0.2)'
               ],
@@ -150,8 +142,8 @@
               ],
               borderWidth: 1
             }, {
-              label: '# of ok',
-              data: [20, 10, 5, 10, 8, 10],
+              label: 'Vaša vrednost poena srca',
+              data: [17, 22, 18, 22, 24, 25],
               backgroundColor: [
                 'rgba(55, 99, 132, 0.2)'
               ],
@@ -186,16 +178,17 @@
         var myChart = new Chart(ctx, {
           type: 'bar',
           data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            labels: ['ponedeljak', 'utorak', 'sreda', 'četvrtak', 'petak', 'subota', 'nedelja'],
             datasets: [{
-              label: '# of Votes',
-              data: [12, 19, 3, 5, 2, 3],
+              label: '# aktivnih poena',
+              data: [50, 53, 47, 60, 58, 68, 72],
               backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
                 'rgba(255, 206, 86, 0.2)',
                 'rgba(75, 192, 192, 0.2)',
                 'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
                 'rgba(255, 159, 64, 0.2)'
               ],
               borderColor: [
@@ -204,6 +197,7 @@
                 'rgba(255, 206, 86, 1)',
                 'rgba(75, 192, 192, 1)',
                 'rgba(153, 102, 255, 1)',
+                'rgba(255, 206, 86, 1)',
                 'rgba(255, 159, 64, 1)'
               ],
               borderWidth: 1
