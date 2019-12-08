@@ -134,7 +134,7 @@
           data: {
             labels: ['jul', 'avgust', 'septembar', 'oktobar', 'novembar', 'decembar'],
             datasets: [{
-              label: 'Srednja vrednost poena srca',
+              label: 'Srednja vrednost kardio poena',
               data: [18, 21, 20, 24, 22, 21],
               backgroundColor: [
                 'rgba(255, 99, 132, 0.2)'
@@ -149,7 +149,7 @@
               ],
               borderWidth: 1
             }, {
-              label: 'Vaša vrednost poena srca',
+              label: 'Vaša vrednost kardio poena',
               data: [17, 22, 18, 22, 24, 25],
               backgroundColor: [
                 'rgba(55, 99, 132, 0.2)'
@@ -187,8 +187,8 @@
           data: {
             labels: ['ponedeljak', 'utorak', 'sreda', 'četvrtak', 'petak', 'subota', 'nedelja'],
             datasets: [{
-              label: '# aktivnih poena',
-              data: [50, 53, 47, 60, 58, 68, 72],
+              label: '# kilometara',
+              data: [3, 6, 2, 8, 5, 10, 15],
               backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
