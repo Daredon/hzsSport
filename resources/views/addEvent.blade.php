@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('styles/calendar.css') }}">
-    <title>Document</title>
+    <title>Dodavanje dogadjaja</title>
 </head>
 <body>
 @if (isset($errors))
@@ -15,7 +15,7 @@
 @endif
 {!! Form::open(['route' => 'event.create']) !!}
         <input type="text" name="name" placeholder="Naziv dogadjaja">
-        <input type="text" name="Lokacija" placeholder="Lokacija">
+        <input type="text" name="location" placeholder="Lokacija">
         <input type="text" name="start" id="start">
         <input type="text" name="end" id="end">
         <textarea name="description" placeholder="Opis"></textarea>
