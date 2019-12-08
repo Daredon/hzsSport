@@ -96,13 +96,10 @@
   padding: 2rem;
   overflow: hidden;
   position: relative;
-}
-
-#sports div:nth-child(1) {
   min-width: 100vw;
 }
 
-#sports div:nth-child(1):after {
+#sports div:after {
   content: "";
   position: absolute;
   top: 0;
@@ -113,8 +110,8 @@
   opacity: 0.5;
 }
 
-#sports div video,
-#sports div img {
+#sports video,
+#sports img {
   position: absolute;
   top: -10px;
   left: -10px;

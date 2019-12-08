@@ -58,10 +58,11 @@
         </video>
       </div>
       <div id="slide2">
-
+        <img src="{{asset('assets/slides/sadBoomer.jpg')}}" alt="lol" />
+        <h1></h1>
       </div>
       <div id="slide3">
-
+        <img src="{{asset('assets/slides/sadDishwasher.jpg')}}" alt="lol1" />
       </div>
     </div>
   </div>
