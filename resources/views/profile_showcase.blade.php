@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>scroll.</title>
+  <title>{{$user->username}}</title>
   <link rel="stylesheet" href="{{ asset('styles/global.css') }}" />
   <link rel="stylesheet" href="{{ asset('styles/scroll/navigation.css')}}" />
   <link rel="stylesheet" href="{{ asset('styles/scroll/scroll.css')}}" />

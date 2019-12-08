@@ -9,9 +9,46 @@
     <link rel="stylesheet" href="{{ asset('styles/scroll/navigation.css')}}" />
     <link rel="stylesheet" href="{{ asset('styles/burger.css')}}" />
     <link rel="stylesheet" href="{{ asset('styles/register/register.css')}}" />
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
 </head>
-<body>
+<body onload="load()">
+  <nav id="nav">
+    <div onclick="burgerToggle()" class="burger" id="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="links">
+      <ul>
+        <li>
+          <a href="{{route('page.index')}}">
+
+            <i class="material-icons">home</i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="material-icons">camera_enhance</i>
+            <span>Images</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="material-icons">favorite</i>
+            <span>Liked</span>
+          </a>
+        </li>
+        <li class="account">
+          <a href="#">
+            <i class="material-icons">person</i>
+            <span>Account</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 @if (isset($errors))
     @foreach($errors as $error)
         {{ $error }} <br>
@@ -36,6 +73,7 @@
         <input type="password" name="password_conf" placeholder="Confirm Password">
         <input type="submit">
 {!! Form::close() !!}
+<script src="{{asset('scripts/navigation.js')}}"></script>
 </div>
 </body>
 </html>
