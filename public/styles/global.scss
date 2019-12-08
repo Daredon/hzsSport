@@ -9,6 +9,14 @@
     font-family: "Lato", sans-serif;
 }
 
+:root {
+    --color-bg: #121212;
+    --color-card-bg: #202020;
+    --color-fg: #ffffff;
+    --color-fg-focus: #bbbbbb;
+    --color-shadow: rgba(0, 0, 0, 0.5);
+    --color-primary: rgb(95, 145, 210);
+}
 html {
     font-size: 16px;
 }
