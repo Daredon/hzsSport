@@ -21,8 +21,8 @@
 <div class="form">
     <h1>Prijavite se</h2>
 {!! Form::open(['route' => 'user.loginUser']) !!}
-        <h2>Korisnicko ime ili e-mail</h2>
-        <input type="text" name="input" placeholder="Username or email">
+        <h2>Korisničko ime ili e-mail</h2>
+        <input type="text" name="input" placeholder="Korisničko ime or e-mail">
         <h2>Sifra</h2>
         <input type="password" name="password" placeholder="Password">
         <input type="submit">

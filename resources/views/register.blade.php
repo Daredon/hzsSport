@@ -57,8 +57,8 @@
 <div class="form">
     <h1>Napravite nalog</h1>
 {!! Form::open(['route' => 'user.addUser']) !!}
-        <h2>Korisnicko ime</h2>
-        <input type="text" name="username" placeholder="Username">
+        <h2>Korisničko ime</h2>
+        <input type="text" name="username" placeholder="Korisničko ime">
         <h2>E-mail</h2>
         <input type="email" name="email" placeholder="E-mail">
         <h2>Ime</h2>
@@ -67,10 +67,10 @@
         <input type="text" name="lname" placeholder="Prezime">
         <h2>Firma</h2>
         {!! Form::select('company', $companies) !!}
-        <h2>Sifra</h2>
-        <input type="password" name="password" placeholder="Password">
-        <h2>Potvrdite sifru</h2>
-        <input type="password" name="password_conf" placeholder="Confirm Password">
+        <h2>Šifra</h2>
+        <input type="password" name="password" placeholder="Šifra">
+        <h2>Potvrdite šifru</h2>
+        <input type="password" name="password_conf" placeholder="Potvrdi šifru">
         <input type="submit">
 {!! Form::close() !!}
 <script src="{{asset('scripts/navigation.js')}}"></script>
