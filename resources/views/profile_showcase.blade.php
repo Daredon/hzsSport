@@ -67,17 +67,20 @@
         <ul>
           <li>
             <i class="material-icons">person</i>
-            Masa: 70kg
+            Masa: 70 kg
           </li>
           <li>
             <i class="material-icons">height</i>
-            Visina: 180cm
+            Visina: 180 cm
           </li>
           <li>
             <i class="material-icons">calendar_today</i>
-            Starost: 50godina
+            Starost: 50 godina
           </li>
         </ul>
+        <div class="buttons">
+          <a href="{{route('page.logout')}}">Odjavi se</a>
+        </div>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>

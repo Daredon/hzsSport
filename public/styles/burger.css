@@ -46,7 +46,7 @@
 @media (hover: hover) {
   .burger:hover div,
   .burger:focus div {
-    background-color: #eeeeee;
+    background-color: #c5c5c5;
   }
   .burger:hover div:nth-child(1),
   .burger:focus div:nth-child(1) {

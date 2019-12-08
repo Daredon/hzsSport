@@ -1,72 +1,92 @@
 @import "../imports/colors";
 
-
 body {
-   height: 100vh;
-   background: $color-bg;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    height: 100vh;
+    background: repeating-linear-gradient(
+            45deg,
+            rgba($color-bg, 0.5),
+            rgba($color-bg, 0.5) 10vw,
+            rgba($color-bg-focus, 0.5) 30vw,
+            rgba($color-bg-focus, 0.5) 30vw
+        ),
+        repeating-linear-gradient(
+            -45deg,
+            rgba($color-bg, 0.5),
+            rgba($color-bg, 0.5) 10vw,
+            rgba($color-bg-focus, 0.5) 30vw,
+            rgba($color-bg-focus, 0.5) 30vw
+        ),
+        $color-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form {
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   .naslov {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     color: $color-fg;
-     i.material-icons {
-       font-size: 2rem;
-       color: $color-fg;
-       cursor: pointer;
-       &:hover {
-         color: $color-fg-focus;
-       }
-     }
-   }
-
-   h1 {
-      padding: 1rem;
-      font-size: 4rem;
-      color: $color-fg;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .naslov {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $color-fg;
+        i.material-icons {
+            font-size: 2rem;
+            color: $color-fg;
+            cursor: pointer;
+            &:hover {
+                color: $color-fg-focus;
+            }
+        }
     }
 
-   h2 {
-      padding: 0.5rem;
-      font-size: 2rem;
-      color: $color-fg;
-   }
+    h1 {
+        padding: 1rem;
+        font-size: 4rem;
+        color: $color-fg;
+    }
 
-form {
-   padding: 2rem;
-   width:100%;   
-   max-width: 600px;
-   display: flex;
-   flex-direction: column;
-   color: $color-fg;
+    h2 {
+        padding: 0.5rem;
+        font-size: 2rem;
+        color: $color-fg;
+    }
 
-   
+    form {
+        padding: 2rem;
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        color: $color-fg;
 
-   input:not([type=checkbox]), select, textarea {
-     width: 100%;
-     color: $color-fg;
-     font-size: 1.5rem;
-     background-color: $color-bg;
-     border: none;
-     padding: .5rem;
-     margin:.5rem;
-     border-bottom: $color-fg 1px solid;
-     
-   }
+        input:not([type="checkbox"]),
+        select,
+        textarea {
+            width: 100%;
+            color: $color-fg;
+            font-size: 1.5rem;
+            background-color: $color-bg;
+            border: none;
+            padding: 1rem;
+            margin: 1rem;
+            border-bottom: $color-fg 1px solid;
+            box-shadow: 10px 10px 10px $shadow-color;
+        }
+        input[type="submit"] {
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+            &:hover {
+                background-color: $color-bg-focus;
+            }
+        }
 
-   textarea {
-     border: $color-fg 1px solid;
-     border-radius: .5rem;
-   }
-
- }
+        textarea {
+            border: $color-fg 1px solid;
+            border-radius: 0.5rem;
+        }
+    }
 }

@@ -17,6 +17,7 @@
         border-radius: 0.5rem;
         background: $color-bg-focus;
         padding: 1rem;
+        position: relative;
     }
 }
 
@@ -63,6 +64,28 @@
                     font-size: 3rem;
                 }
             }
+        }
+    }
+}
+
+.buttons {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    display: flex;
+    flex-direction: column;
+    a {
+        font-size: 1.5rem;
+        border: solid 1px $color-fg;
+        color: $color-fg;
+        padding: 0.75rem;
+        margin-top: 0.5rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        &:hover {
+            color: $color-fg-focus;
+            border: solid 1px $color-fg-focus;
+            box-shadow: 6px 6px 6px $shadow-color;
         }
     }
 }

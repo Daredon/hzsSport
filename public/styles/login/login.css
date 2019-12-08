@@ -1,6 +1,6 @@
 body {
   height: 100vh;
-  background: #001016;
+  background: repeating-linear-gradient(45deg, rgba(0, 16, 22, 0.5), rgba(0, 16, 22, 0.5) 10vw, rgba(3, 28, 37, 0.5) 30vw, rgba(3, 28, 37, 0.5) 30vw), repeating-linear-gradient(-45deg, rgba(0, 16, 22, 0.5), rgba(0, 16, 22, 0.5) 10vw, rgba(3, 28, 37, 0.5) 30vw, rgba(3, 28, 37, 0.5) 30vw), #001016;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +46,7 @@ body {
 }
 
 .form .naslov i.material-icons:hover {
-  color: #eeeeee;
+  color: #c5c5c5;
 }
 
 .form h1 {
@@ -75,19 +75,34 @@ body {
   color: #fff;
 }
 
-.form form input:not([type=checkbox]), .form form select, .form form textarea {
+.form form input:not([type="checkbox"]),
+.form form select,
+.form form textarea {
   width: 100%;
   color: #fff;
   font-size: 1.5rem;
   background-color: #001016;
   border: none;
-  padding: .5rem;
-  margin: .5rem;
+  padding: 1rem;
+  margin: 1rem;
   border-bottom: #fff 1px solid;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form form input[type="submit"] {
+  cursor: pointer;
+  border: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.form form input[type="submit"]:hover {
+  background-color: #031c25;
 }
 
 .form form textarea {
   border: #fff 1px solid;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 /*# sourceMappingURL=login.css.map */
