@@ -25,3 +25,4 @@ Route::get('/user/{username}', 'UsersController@showUser')->name('user.showcase'
 Route::get('/addEvent', 'BaseController@addEventPage')->name('page.addEvent');
 Route::get('/events', 'EventsController@showEvents')->name('events.show');
 Route::post('/events/create', 'EventsController@createEvent')->name('event.create');
+Route::get('/event/delete/{id}', 'EventsController@deleteEvent')->name('event.delete');
