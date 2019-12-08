@@ -79,6 +79,7 @@
         position: relative;
         min-width: 100vw;
         &:after {
+            z-index: 10;
             content: "";
             position: absolute;
             top: 0;
@@ -88,6 +89,7 @@
             background: $color-bg;
             opacity: 0.5;
         }
+        
     }
 
     video,
@@ -101,5 +103,35 @@
         width: calc(100% + 20px);
 
         filter: blur(10px);
+    }
+}
+
+h1 {
+    color: $color-fg;
+    text-shadow: 5px 5px 5px $shadow-color;
+    font-size: 5rem;
+}
+
+h2 {
+    color: $color-fg;
+    text-shadow: 5px 5px 5px $shadow-color;
+    font-size: 3rem;
+}
+
+#slide2 {
+    span {
+        z-index: 15;
+        position: absolute;
+        top: 60%;
+        right: 10%;
+    }
+}
+
+#slide3 {
+    span {
+        z-index: 15;
+        position: absolute;
+        top: 40%;
+        left: 5%;
     }
 }

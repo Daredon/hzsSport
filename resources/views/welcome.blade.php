@@ -69,14 +69,22 @@
       <div id="slide1">
         <video autoplay loop muted>
           <source src=" {{asset('assets/videos/background1.mp4')}}" type="video/mp4">
+          <h1></h1>
         </video>
       </div>
       <div id="slide2">
         <img src="{{asset('assets/slides/sadBoomer.jpg')}}" alt="lol" />
-        <h1></h1>
+        <span>
+          <h1>Vezbanje</h1>
+          <h2>utice na tezinu, zdravlje, raspolozenje, energiju...</h2>
+        </span>
       </div>
       <div id="slide3">
         <img src="{{asset('assets/slides/sadDishwasher.jpg')}}" alt="lol1" />
+        <span>
+          <h1>52% ljudi</h1>
+          <h2>na svetskom nivou radi kancelarijski posao</h2>
+        </span>
       </div>
     </div>
   </div>
