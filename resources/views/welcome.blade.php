@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="{{ asset('styles/burger.css')}}" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
 </head>
 
 <body onload="load()" onscroll="scrolled()" onresize="resized()">
@@ -79,8 +80,11 @@
       <div id="slide1">
         <video autoplay loop muted>
           <source src=" {{asset('assets/videos/background1.mp4')}}" type="video/mp4">
-          <h1></h1>
         </video>
+        <span>
+          <h1>hzSport</h1>
+          <h2>aktivnost za svakog</h2>
+        </span>
       </div>
       <div id="slide2">
         <img src="{{asset('assets/slides/sadBoomer.jpg')}}" alt="lol" />

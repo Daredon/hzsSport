@@ -1,0 +1,33 @@
+@import "../imports/colors";
+@import "../imports/sizes";
+@import "../imports/mixins";
+
+.users {
+    margin-left: 4rem;
+    width: calc(100vw - 4rem);
+    height: 100vh;
+    background: $color-bg;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    padding: 2rem;
+    h1 {
+        color: $color-fg;
+        text-align: center;
+        font-size: 4rem;
+        padding: 1rem;
+    }
+
+    tr {
+        background: $color-bg-focus;
+        font-size: 2rem;
+        color: $color-fg;
+        td,
+        th {
+            border: calc(1rem / 3) $color-bg solid;
+            border-radius: 1rem;
+            margin: 0.5rem;
+            padding: 2rem;
+        }
+    }
+}

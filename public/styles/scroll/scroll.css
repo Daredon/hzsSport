@@ -137,6 +137,23 @@ h2 {
   font-size: 3rem;
 }
 
+#slide1 span {
+  z-index: 15;
+  position: absolute;
+  top: 37%;
+  right: 10%;
+  line-height: 1;
+}
+
+#slide1 span h1 {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 8rem;
+}
+
+#slide1 span h2 {
+  text-align: right;
+}
+
 #slide2 span {
   z-index: 15;
   position: absolute;

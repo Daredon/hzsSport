@@ -6,11 +6,16 @@ body {
 }
 
 .oh {
+    padding-top: 3rem;
     color: $color-fg;
     margin-left: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    & > h1 {
+        font-size: 4rem;
+    }
     .cards {
         max-width: 1200px;
         margin: 0 auto;
@@ -33,7 +38,9 @@ body {
             box-shadow: 7px 7px 20px $shadow-color;
             position: relative;
             transition: all 0.1s ease-in-out;
-
+            &:hover {
+                transform: scale(1.1);
+            }
             h1 {
                 font-size: 2wrem;
             }

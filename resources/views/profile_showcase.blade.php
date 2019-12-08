@@ -187,7 +187,7 @@
           data: {
             labels: ['ponedeljak', 'utorak', 'sreda', 'četvrtak', 'petak', 'subota', 'nedelja'],
             datasets: [{
-              label: '# kilometara',
+              label: 'Predjeni kilometri',
               data: [3, 6, 2, 8, 5, 10, 15],
               backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',

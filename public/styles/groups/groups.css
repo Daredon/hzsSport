@@ -1,0 +1,38 @@
+.users {
+  margin-left: 4rem;
+  width: calc(100vw - 4rem);
+  height: 100vh;
+  background: #001016;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  padding: 2rem;
+}
+
+.users h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+.users tr {
+  background: #031c25;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.users tr td,
+.users tr th {
+  border: calc(1rem / 3) #001016 solid;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding: 2rem;
+}
+/*# sourceMappingURL=groups.css.map */

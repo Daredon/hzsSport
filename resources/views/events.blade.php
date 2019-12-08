@@ -75,6 +75,7 @@
         </div>
     </nav>
     <div class="oh">
+        <h1>Događaji</h1>
         <div class="cards">
             @foreach ($events as $event)
             <div class="card">
