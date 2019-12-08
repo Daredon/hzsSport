@@ -9,5 +9,18 @@ use Illuminate\Http\Request;
 
 class EventsController extends Controller
 {
-    
+    public function showEvents() {
+        return view('events',['events' => DB::table('events')->select('*')->get()]);
+    }
+
+    public function createEvent(Request $req) {
+        DB::table('events')->insert([
+            'name' => $req->get('name'),
+            'time_start' => strtotime($req->get('start')),
+            'time_end' => strtotime($req->get('start')),
+            'description' => $req->get('description'),
+            'location' => $req->get('location')
+        ]);
+        return redirect()->route('events.show');
+    }
 }
