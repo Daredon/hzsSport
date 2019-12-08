@@ -75,14 +75,23 @@
         </div>
     </nav>
     <div class="users">
-        @foreach ($groups as $group)
-        <div class="user">
-            <span>{{$group->fistname . ' ' . $group->lastname}}</span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        @endforeach
+        <h1>Tvoja grupa</h1>
+        <table>
+            <tr>
+                <th>Ime i prezime</th>
+                <th>Postignut rezultat</th>
+                <th>Željenji rezultat</th>
+                <th>Uspeh</th>
+            </tr>
+            @foreach ($groups as $group)
+            <tr class="user">
+                <td>{{$group->firstname . ' ' . $group->lastname}}</td>
+                <td>{{$group->proggress . ' km'}}</td>
+                <td>{{$group->goal . ' km'}}</td>
+                <td>{{($group->proggress / $group->goal) * 100 > 100 ? 100 : round(($group->proggress / $group->goal) * 100, 2)  . ' %'}}</td>
+            </tr>
+            @endforeach
+        </table>
     </div>
     <script src="{{asset('scripts/navigation.js')}}"></script>
 </body>
