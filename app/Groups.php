@@ -8,7 +8,7 @@ class Groups
 {
 
     public static function getUserGroup() {
-        if (Session::get('id') !== null) {
+        if (session()->get('id') !== null) {
             return DB::table('users')->select('id', 'username', 'group_id')->where('group_id', '=', session()->get('id'));
         } else {
             return null;
