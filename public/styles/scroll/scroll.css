@@ -100,6 +100,7 @@
 }
 
 #sports div:after {
+  z-index: 10;
   content: "";
   position: absolute;
   top: 0;
@@ -122,5 +123,31 @@
   width: calc(100% + 20px);
   -webkit-filter: blur(10px);
           filter: blur(10px);
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  font-size: 5rem;
+}
+
+h2 {
+  color: #fff;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  font-size: 3rem;
+}
+
+#slide2 span {
+  z-index: 15;
+  position: absolute;
+  top: 60%;
+  right: 10%;
+}
+
+#slide3 span {
+  z-index: 15;
+  position: absolute;
+  top: 40%;
+  left: 5%;
 }
 /*# sourceMappingURL=scroll.css.map */
