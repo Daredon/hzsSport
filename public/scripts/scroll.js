@@ -11,7 +11,7 @@ const map = (num, in_min, in_max, out_min, out_max) =>
 const anim = (val, min, max, minR, maxR) =>
     map(val < max ? val : max, min, max, minR, maxR);
 const animate = () => {
-    nav.style.width = anim(window.scrollY, 0, vw(25), 300, rem(4)) + "px";
+    nav.style.width = anim(window.scrollY, 0, vw(25), rem(20), rem(4)) + "px";
     nav.style.setProperty(
         "--nav-opacity",
         anim(window.scrollY, 0, vw(12.5), 1, 0)
@@ -77,7 +77,7 @@ function burgerToggle() {
     if (!burger.classList.contains("active")) {
         nav.style.transition = "all .2s ease-in";
         burger.classList.add("active");
-        nav.style.width = 300 + "px";
+        nav.style.width = rem(20) + "px";
         nav.style.setProperty("--nav-opacity", "1");
         burger.style.opacity = "1";
     } else if (burger.classList.contains("active")) {
