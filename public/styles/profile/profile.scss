@@ -23,13 +23,14 @@
     color: $color-fg;
     display: flex;
     flex-direction: column;
+    padding: 1rem;
     & > div {
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 2rem;
+        padding: 1rem;
         img {
-            padding: 1rem;
+            padding: 1em;
             border-radius: 200000px;
         }
         div {
@@ -43,6 +44,24 @@
             }
             h2 {
                 font-size: 2rem;
+            }
+        }
+
+        &:nth-child(2) {
+            padding-top: 0;
+            ul {
+                li {
+                    display: flex;
+                    align-items: center;
+                    line-height: 1.75;
+                }
+                padding-left: 4rem;
+                font-size: 2rem;
+                list-style: none;
+                .material-icons {
+                    padding-right: 1rem;
+                    font-size: 3rem;
+                }
             }
         }
     }

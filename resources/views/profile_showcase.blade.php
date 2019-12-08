@@ -63,11 +63,18 @@
       </div>
       <div>
         <ul>
-          <li>Da</li>
-          <li>Da</li>
-          <li>Da</li>
-          <li>Da</li>
-          <li>Da</li>
+          <li>
+            <i class="material-icons">person</i>
+            Masa: 70kg
+          </li>
+          <li>
+            <i class="material-icons">height</i>
+            Visina: 180cm
+          </li>
+          <li>
+            <i class="material-icons">calendar_today</i>
+            Starost: 50godina
+          </li>
         </ul>
       </div>
     </div>

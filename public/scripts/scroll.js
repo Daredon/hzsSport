@@ -26,7 +26,7 @@ let scroll;
 let nav;
 let burger;
 let topButton;
-const sportovi = ["slide1", "slide2"];
+const sportovi = ["slide1", "slide2", "slide3"];
 let active = 0;
 
 function load() {
