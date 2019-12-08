@@ -29,6 +29,7 @@
             <span>Početak</span>
           </a>
         </li>
+        @if(Session::get('id') != null)
         <li>
           @if(Session::get('type') == 1)
           <a href="{{route('page.groups')}}">
@@ -48,6 +49,15 @@
             <span>Događaji</span>
           </a>
         </li>
+        @if(Session::get('type') == 1)
+        <li>
+          <a href="{{ route('page.addEvent') }}">
+            <i class="material-icons">add</i>
+            <span>Dodaj događaj</span>
+          </a>
+        </li>
+        @endif
+        @endif
         <li class="account">
           @if(Session::get('id') == null)
           <a href="{{ route('page.login')}}">

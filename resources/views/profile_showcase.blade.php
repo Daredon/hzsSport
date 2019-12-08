@@ -50,6 +50,14 @@
             <span>Događaji</span>
           </a>
         </li>
+        @if(Session::get('type') == 1)
+        <li>
+          <a href="{{ route('page.addEvent') }}">
+            <i class="material-icons">add</i>
+            <span>Dodaj događaj</span>
+          </a>
+        </li>
+        @endif
       </ul>
     </div>
   </nav>
