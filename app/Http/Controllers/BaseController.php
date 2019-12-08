@@ -11,13 +11,6 @@ use PulkitJalan\Google\Facades\Google;
 
 class BaseController extends Controller
 {
-    public function api() {
-        $client = Google::getClient();
-        $fit = Google::make('fitness');
-        echo "<pre>";
-        var_dump($fit->objects);
-
-    }
 
     public function groupsPage() {
         if (session()->get('type') === null) {
