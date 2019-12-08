@@ -79,6 +79,9 @@
             @foreach ($events as $event)
             <div class="card">
                 <h1>{{$event->name}}</h1>
+                <h2>{{$event->description}}</h2>
+                <h3>Pocetak: {{date("d.m.Y H:i", $event->time_start)}}</h3>
+                <h3>Kraj: {{date("d.m.Y H:i", $event->time_end)}}</h3>
             </div>
             @endforeach
         </div>

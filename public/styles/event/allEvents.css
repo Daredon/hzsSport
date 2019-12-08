@@ -35,6 +35,7 @@ body {
 .oh .cards .card {
   border-radius: 0.5rem;
   color: #fff;
+  padding: 1rem;
   margin: 1rem;
   width: 100%;
   height: 300px;
@@ -45,5 +46,17 @@ body {
   position: relative;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+}
+
+.oh .cards .card h1 {
+  font-size: 2wrem;
+}
+
+.oh .cards .card h2 {
+  padding: 2rem 0;
+}
+
+.oh .cards .card h3 {
+  line-height: 1.5;
 }
 /*# sourceMappingURL=allEvents.css.map */
