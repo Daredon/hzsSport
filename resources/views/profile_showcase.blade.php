@@ -29,25 +29,26 @@
           <a href="{{route('page.index')}}">
 
             <i class="material-icons">home</i>
-            <span>Home</span>
+            <span>Početak</span>
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class="material-icons">camera_enhance</i>
-            <span>Images</span>
+          @if(Session::get('type') == 1)
+          <a onclick="scrollToTop()">
+            <i class="material-icons">people</i>
+            <span>Grupe</span>
           </a>
+          @else
+          <a onclick="scrollToTop()">
+            <i class="material-icons">people</i>
+            <span>Grupa</span>
+          </a>
+          @endif
         </li>
         <li>
           <a href="#">
             <i class="material-icons">favorite</i>
             <span>Liked</span>
-          </a>
-        </li>
-        <li class="account">
-          <a href="#">
-            <i class="material-icons">person</i>
-            <span>Account</span>
           </a>
         </li>
       </ul>

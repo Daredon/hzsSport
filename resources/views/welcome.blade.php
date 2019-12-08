@@ -26,14 +26,21 @@
         <li>
           <a onclick="scrollToTop()">
             <i class="material-icons">home</i>
-            <span>Home</span>
+            <span>Početak</span>
           </a>
         </li>
         <li>
-          <a href="#">
-            <i class="material-icons">camera_enhance</i>
-            <span>Images</span>
+          @if(Session::get('type') == 1)
+          <a onclick="scrollToTop()">
+            <i class="material-icons">people</i>
+            <span>Grupe</span>
           </a>
+          @else
+          <a onclick="scrollToTop()">
+            <i class="material-icons">people</i>
+            <span>Grupa</span>
+          </a>
+          @endif
         </li>
         <li>
           <a href="#">
@@ -42,10 +49,17 @@
           </a>
         </li>
         <li class="account">
+          @if(Session::get('id') == null)
+          <a href="{{ route('page.login')}}">
+            <i class="material-icons">person</i>
+            <span>Prijavi se</span>
+          </a>
+          @else
           <a href="{{ route('user.showcase', Session::get('username'))}}">
             <i class="material-icons">person</i>
-            <span>Account</span>
+            <span>Nalog</span>
           </a>
+          @endif
         </li>
       </ul>
     </div>
