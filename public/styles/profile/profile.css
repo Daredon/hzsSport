@@ -1,5 +1,72 @@
 #showcase {
-  margin: 1rem;
+  width: calc(100% - 4rem);
+  height: 100vh;
+  background-color: #001016;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
   padding: 2rem;
+  margin-left: 4rem;
+}
+
+#showcase > div {
+  border-radius: 0.5rem;
+  background: #031c25;
+}
+
+.profile {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.profile > div img {
+  padding: 1rem;
+  border-radius: 200000px;
+}
+
+.profile > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile > div div * {
+  line-height: 1;
+}
+
+.profile > div div h1 {
+  font-size: 4rem;
+}
+
+.profile > div div h2 {
+  font-size: 2rem;
 }
 /*# sourceMappingURL=profile.css.map */

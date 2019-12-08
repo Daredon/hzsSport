@@ -1,4 +1,49 @@
+@import "../imports/colors";
+@import "../imports/sizes";
+@import "../imports/mixins";
+
 #showcase {
-    margin: 1rem;
+    width: calc(100% - 4rem);
+    height: 100vh;
+    background-color: $color-bg;
+    display: inline-grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
     padding: 2rem;
+    margin-left: 4rem;
+
+    & > div {
+        border-radius: 0.5rem;
+        background: $color-bg-focus;
+    }
+}
+
+.profile {
+    color: $color-fg;
+    display: flex;
+    flex-direction: column;
+    & > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 2rem;
+        img {
+            padding: 1rem;
+            border-radius: 200000px;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            * {
+                line-height: 1;
+            }
+            h1 {
+                font-size: 4rem;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    }
 }

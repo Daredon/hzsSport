@@ -42,7 +42,7 @@
           </a>
         </li>
         <li class="account">
-          <a href="#">
+          <a href="{{ route('user.showcase', Session::get('username'))}}">
             <i class="material-icons">person</i>
             <span>Account</span>
           </a>
@@ -55,9 +55,7 @@
       <div id="slide1">
         <video autoplay loop muted>
           <source src=" {{asset('assets/videos/background1.mp4')}}" type="video/mp4">
-          Your browser does not support the video tag.
         </video>
-        <h1>Lol</h1>
       </div>
       <div id="slide2">
 
